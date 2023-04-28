@@ -1,0 +1,99 @@
+[build-system]
+requires = [
+    "hatchling>=1.3.1",
+    "hatch-jupyter-builder",
+    "jupyterlab>=3.5,<4",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "perspective-parquet"
+description = "Parquet viewer for perspective in JupyterLab"
+version = "0.1.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Tim Paine", email = "t.paine154@gmail.com" },
+]
+keywords = [
+    "Jupyter",
+    "JupyterLab",
+    "Widgets",
+    "IPython",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "perspective-python",
+]
+
+[project.optional-dependencies]
+develop = [
+    "black>=23",
+    "check-manifest",
+    "ruff",
+    "pytest",
+    "pytest-cov",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+
+[project.urls]
+repository = "https://github.com/timkpaine/perspective-parquet"
+homepage = "https://github.com/timkpaine/perspective-parquet"
+
+[tool.check-manifest]
+ignore = [
+	"perspective_parquet/labextension/**",
+	"js/**"
+]
+
+[tool.hatch.build]
+artifacts = [
+    "perspective_parquet/labextension"
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"perspective_parquet/labextension" = "share/jupyter/labextensions/perspective-parquet"
+"perspective_parquet/extension/install.json" = "share/jupyter/labextensions/perspective-parquet/install.json"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+    "docs",
+]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+    "perspective_parquet/labextension/package.json",
+]
+skip-if-exists = [
+    "perspective_parquet/labextension/package.json",
+]
+dependencies = [
+    "hatch-jupyter-builder>=0.5.0",
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+path = "js"
+build_cmd = "build"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401", "F403"]

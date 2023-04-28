@@ -1,0 +1,67 @@
+{
+    "name": "perspective-parquet",
+    "version": "0.1.0",
+    "description": "A Jupyterlab extension for the Perspective library to view/edit parquet files",
+    "files": [
+        "dist/**/*",
+        "src/**/*"
+    ],
+    "main": "dist/umd/perspective-parquet.js",
+    "style": "dist/umd/perspective-parquet.css",
+    "directories": {
+        "dist": "dist/"
+    },
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "npm-run-all build:js build:labextension",
+        "build:js": "node build.js",
+        "build:labextension": "jupyter labextension build .",
+        "lint": "prettier --check \"src/js/*.js\" \"src/less/*.less\" \"*.js\" \"*.json\"",
+        "fix": "prettier --write  \"src/js/*.js\" \"src/less/*.less\" \"*.js\" \"*.json\"",
+        "test": ":",
+        "clean": "npm-run-all clean:*",
+        "clean:dist": "rimraf dist",
+        "clean:lib": "rimraf lib",
+        "clean:labextension": "rimraf ../perspective_parquet/labextension"
+    },
+    "dependencies": {
+        "@finos/perspective-jupyterlab": "^2.0.1",
+        "@jupyter-widgets/base": "^2 || ^3 || ^4 || ^5 || ^6",
+        "@jupyterlab/application": "^3.6.1",
+        "@lumino/application": "^1.27.0",
+        "@lumino/widgets": "^1.37.0",
+        "parquet-wasm": "^0.3.1"
+    },
+    "devDependencies": {
+        "@finos/perspective-esbuild-plugin": "^2.0.1",
+        "@jupyterlab/builder": "^3.4.0",
+        "@prospective.co/procss": "^0.1.12",
+        "cpy": "^9.0.1",
+        "esbuild": "^0.17.18",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.8.8"
+    },
+    "jupyterlab": {
+        "extension": true,
+        "outputDir": "../perspective_parquet/labextension",
+        "sharedPackages": {
+            "@jupyter-widgets/base": {
+                "bundled": false,
+                "singleton": true
+            }
+        },
+        "discovery": {
+            "server": {
+                "base": {
+                    "name": "perspective-python"
+                },
+                "managers": [
+                    "pip"
+                ]
+            }
+        }
+    }
+}
