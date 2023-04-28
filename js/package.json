@@ -1,6 +1,6 @@
 {
     "name": "perspective-parquet",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A Jupyterlab extension for the Perspective library to view/edit parquet files",
     "files": [
         "dist/**/*",
