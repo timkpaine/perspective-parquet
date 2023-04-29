@@ -1,5 +1,6 @@
 docs/* linguist-documentation
 
 *.ipynb linguist-documentation
+Makefile linguist-documentation
 
 *.js text eol=lf
