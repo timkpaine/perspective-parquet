@@ -7,6 +7,10 @@ async function getPsp(page, filename) {
     waitUntil: "networkidle",
   });
 
+  // wait up to 10s for perspective to render
+  await page.waitForFunction(() => document.querySelector("perspective-viewer"), null, {timeout: 10000});
+
+  // wait 5s for perspective to load data
   await new Promise((resolve) => setTimeout(() => resolve(), 5000));
 
   const psp = await page.evaluate(async () => {
