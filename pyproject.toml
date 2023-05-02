@@ -42,7 +42,9 @@ dependencies = [
 develop = [
     "black>=23",
     "check-manifest",
+    "jupyterlab",
     "ruff",
+    "perspective-python",
     "pytest",
     "pytest-cov",
 ]
