@@ -35,7 +35,7 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
 ]
 dependencies = [
-    "perspective-python",
+    "perspective-python>=2,<3",
 ]
 
 [project.optional-dependencies]
