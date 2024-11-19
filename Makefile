@@ -28,8 +28,8 @@ tests: testpy testjs ## run the tests
 # Linting #
 ###########
 lintpy:  ## Black/flake8 python
-	python -m ruff perspective_parquet setup.py
-	python -m black --check perspective_parquet setup.py
+	python -m ruff check perspective_parquet setup.py
+	python -m ruff format --check perspective_parquet setup.py
 
 lintjs:  ## ESlint javascript
 	cd js; yarn lint
@@ -37,8 +37,8 @@ lintjs:  ## ESlint javascript
 lint: lintpy lintjs  ## run linter
 
 fixpy:  ## Black python
-	python -m ruff perspective_parquet setup.py --fix
-	python -m black perspective_parquet/ setup.py
+	python -m ruff check perspective_parquet setup.py --fix
+	python -m format --check perspective_parquet/ setup.py
 
 fixjs:  ## ESlint Autofix JS
 	cd js; yarn fix
