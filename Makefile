@@ -38,7 +38,7 @@ lint: lintpy lintjs  ## run linter
 
 fixpy:  ## Black python
 	python -m ruff check perspective_parquet setup.py --fix
-	python -m format --check perspective_parquet/ setup.py
+	python -m ruff format --check perspective_parquet/ setup.py
 
 fixjs:  ## ESlint Autofix JS
 	cd js; yarn fix
