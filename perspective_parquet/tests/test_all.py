@@ -1,5 +1,5 @@
-from perspective_parquet import *  # noqa: F401, F403
+from perspective_parquet import *  # noqa
 
 
 def test_all():
-    pass
+    assert True

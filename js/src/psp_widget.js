@@ -41,7 +41,7 @@ export class PerspectiveWidget extends Widget {
      */
 
     onAfterShow(msg) {
-        this.viewer.notifyResize(true);
+        // this.viewer.notifyResize(true);
         super.onAfterShow(msg);
     }
 

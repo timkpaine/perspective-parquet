@@ -17,16 +17,32 @@ import {
 } from "@jupyterlab/apputils";
 
 import { ABCWidgetFactory, DocumentWidget } from "@jupyterlab/docregistry";
-import perspective from "@finos/perspective/dist/esm/perspective.js";
+import perspective from "@finos/perspective";
+import perspective_viewer from "@finos/perspective-viewer";
+
+import "@finos/perspective-viewer";
+import "@finos/perspective-viewer-datagrid";
+import "@finos/perspective-viewer-d3fc";
 import init, {
     Compression,
     WriterPropertiesBuilder,
     readParquet,
     writeParquet,
 } from "parquet-wasm/esm2/arrow1";
-import wasm from "../../node_modules/parquet-wasm/esm2/arrow1_bg.wasm";
+import wasm from "../node_modules/parquet-wasm/esm2/arrow1_bg.wasm";
 
 import { PerspectiveWidget } from "./psp_widget";
+
+import SERVER_WASM from "@finos/perspective/dist/wasm/perspective-server.wasm";
+import CLIENT_WASM from "@finos/perspective-viewer/dist/wasm/perspective-viewer.wasm";
+
+await Promise.all([
+    perspective.init_server(fetch(SERVER_WASM)),
+    perspective_viewer.init_client(fetch(CLIENT_WASM)),
+]);
+
+
+const worker = await perspective.worker();
 
 /**
  * The name of the factories that creates widgets.
@@ -48,7 +64,6 @@ const baddialog = () => {
     });
 };
 
-const WORKER = perspective.worker();
 export class PerspectiveDocumentWidget extends DocumentWidget {
     constructor(options, type = "parquet") {
         super({
@@ -76,8 +91,8 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
             let data;
             if (this._type === "parquet") {
                 // initialize wasm
-                await wasm;
-                await init(wasm);
+                console.log(wasm);
+                await init(fetch(wasm));
 
                 // `readParquet` returns arrow ipc format uint8array
                 data = readParquet(
@@ -94,7 +109,7 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
                 table.replace(data);
             } catch (e) {
                 // construct new table
-                const table_promise = WORKER.table(data);
+                const table_promise = worker.table(data);
 
                 // load data
                 await this._psp.viewer.load(table_promise);
@@ -167,7 +182,7 @@ export class PerspectiveParquetFactory extends ABCWidgetFactory {
  * Activate cssviewer extension for CSV files
  */
 
-function activate(app, restorer, themeManager) {
+async function activate(app, restorer, themeManager) {
     try {
         app.docRegistry.addFileType({
             name: "parquet",
@@ -255,3 +270,5 @@ export const PerspectiveRenderers = {
 const plugins = [PerspectiveRenderers];
 
 export default plugins;
+
+export {activate as _activate};

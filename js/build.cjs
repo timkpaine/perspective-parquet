@@ -15,6 +15,7 @@ const LAB_BUILD = {
         ".css": "text",
         ".html": "text",
         ".ttf": "file",
+        ".wasm": "file",
     },
     outfile: "dist/umd/perspective-parquet.js",
 };
