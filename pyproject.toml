@@ -83,6 +83,7 @@ ignore = [
     "js/pnpm-lock.yaml",
     "Makefile",
     ".vscode/*",
+    "binder/**",
     "perspective_parquet/extension/**",
     "perspective_parquet/labextension/**",
     "perspective_parquet/nbextension/**",

@@ -157,3 +157,6 @@ perspective_parquet/labextension
 
 # Rust
 target
+
+# Test
+*.parquet
