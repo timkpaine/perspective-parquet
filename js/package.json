@@ -53,7 +53,7 @@
     "@jupyterlab/notebook": "^4.4.2",
     "@jupyterlab/services": "^7.4.4",
     "@lumino/disposable": "^2.1.4",
-    "parquet-wasm": "0.3.1"
+    "parquet-wasm": "0.7.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.27.2",

@@ -36,8 +36,8 @@ importers:
         specifier: ^2.1.4
         version: 2.1.4
       parquet-wasm:
-        specifier: 0.3.1
-        version: 0.3.1
+        specifier: 0.7.1
+        version: 0.7.1
     devDependencies:
       '@babel/cli':
         specifier: ^7.27.2
@@ -3935,8 +3935,8 @@ packages:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
 
-  parquet-wasm@0.3.1:
-    resolution: {integrity: sha512-8OMYwh7N+IcQBeKTuDgpvJR7xh/YKPgnQcs29CQW0Q4ziwroRu7N6tQmmsjiCaQ/W7enBNppquj6VAe2fA1yYQ==}
+  parquet-wasm@0.7.1:
+    resolution: {integrity: sha512-fjEGpMApzt3mpI2pUxdRgQGu5G+s4nr0vm5xn43JO7jxdYzzu2fHrVrTHtfeEhtB6vfvTzJBz0WydDYzLWvszQ==}
 
   parse-json@5.2.0:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
@@ -10282,7 +10282,7 @@ snapshots:
     dependencies:
       callsites: 3.1.0
 
-  parquet-wasm@0.3.1: {}
+  parquet-wasm@0.7.1: {}
 
   parse-json@5.2.0:
     dependencies:
