@@ -21,16 +21,16 @@ importers:
         specifier: ^3.8.0
         version: 3.8.0
       '@jupyterlab/application':
-        specifier: ^4.4.4
+        specifier: ^4.4.9
         version: 4.4.9(react@18.3.1)
       '@jupyterlab/apputils':
-        specifier: ^4.5.5
+        specifier: ^4.5.9
         version: 4.5.9
       '@jupyterlab/notebook':
-        specifier: ^4.4.2
+        specifier: ^4.4.9
         version: 4.4.9
       '@jupyterlab/services':
-        specifier: ^7.4.4
+        specifier: ^7.4.9
         version: 7.4.9(react@18.3.1)
       '@lumino/disposable':
         specifier: ^2.1.4
@@ -40,28 +40,28 @@ importers:
         version: 0.3.1
     devDependencies:
       '@babel/cli':
-        specifier: ^7.27.2
+        specifier: ^7.28.3
         version: 7.28.3(@babel/core@7.28.4)
       '@babel/core':
-        specifier: ^7.28.0
+        specifier: ^7.28.4
         version: 7.28.4
       '@babel/eslint-parser':
-        specifier: ^7.28.0
+        specifier: ^7.28.4
         version: 7.28.4(@babel/core@7.28.4)(eslint@8.57.1)
       '@babel/preset-env':
-        specifier: ^7.27.2
+        specifier: ^7.28.3
         version: 7.28.3(@babel/core@7.28.4)
       '@finos/perspective-esbuild-plugin':
         specifier: ^3.2.1
         version: 3.2.1
       '@jupyterlab/builder':
-        specifier: ^4.4.5
+        specifier: ^4.4.9
         version: 4.4.9
       arraybuffer-loader:
         specifier: ^1.0.8
         version: 1.0.8
       babel-jest:
-        specifier: ^30.0.2
+        specifier: ^30.2.0
         version: 30.2.0(@babel/core@7.28.4)
       babel-loader:
         specifier: ^10.0.0
@@ -94,7 +94,7 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       eslint-plugin-prettier:
-        specifier: ^5.4.0
+        specifier: ^5.5.4
         version: 5.5.4(@types/eslint@9.6.1)(eslint-config-prettier@10.1.8(eslint@8.57.1))(eslint@8.57.1)(prettier@3.6.2)
       html-webpack-plugin:
         specifier: ^5.6.4
@@ -103,10 +103,10 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       jest:
-        specifier: ^30.0.0
+        specifier: ^30.2.0
         version: 30.2.0(@types/node@24.6.1)
       jest-environment-jsdom:
-        specifier: ^30.0.2
+        specifier: ^30.2.0
         version: 30.2.0
       jest-junit:
         specifier: ^16.0.0
