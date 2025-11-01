@@ -51,7 +51,7 @@
     "@jupyterlab/application": "^4.4.9",
     "@jupyterlab/apputils": "^4.5.9",
     "@jupyterlab/notebook": "^4.4.9",
-    "@jupyterlab/services": "^7.4.9",
+    "@jupyterlab/services": "^7.4.10",
     "@lumino/disposable": "^2.1.4",
     "parquet-wasm": "0.3.1"
   },
