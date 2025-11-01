@@ -1,5 +1,5 @@
 perspective_parquet==0.1.2
-perspective-python>=3,<4
+perspective-python>=3,<5
 ipywidgets>=7.5.1
 jupyterlab>=3.5
 pandas
