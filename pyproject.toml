@@ -128,8 +128,8 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"perspective_parquet/labextension" = "share/jupyter/labextensions/perspective_parquet"
-"perspective_parquet/extension/install.json" = "share/jupyter/labextensions/perspective_parquet/install.json"
+"perspective_parquet/labextension" = "share/jupyter/labextensions/perspective-parquet"
+"perspective_parquet/extension/install.json" = "share/jupyter/labextensions/perspective-parquet/install.json"
 "perspective_parquet/extension/perspective_parquet.json" = "etc/jupyter/jupyter_server_config.d/perspective_parquet.json"
 
 [tool.hatch.build.hooks.hatch-js]
