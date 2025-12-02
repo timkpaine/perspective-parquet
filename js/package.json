@@ -50,7 +50,7 @@
     "@finos/perspective-viewer-datagrid": "^3.8.0",
     "@jupyterlab/application": "^4.5.0",
     "@jupyterlab/apputils": "^4.5.10",
-    "@jupyterlab/notebook": "^4.4.10",
+    "@jupyterlab/notebook": "^4.5.0",
     "@jupyterlab/services": "^7.4.10",
     "@lumino/disposable": "^2.1.4",
     "parquet-wasm": "0.3.1"
