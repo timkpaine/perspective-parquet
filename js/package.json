@@ -83,7 +83,7 @@
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
     "prettier": "^3.6.2",
-    "rimraf": "^6.1.0",
+    "rimraf": "^6.1.2",
     "style-loader": "^4.0.0"
   }
 }
