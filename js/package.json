@@ -44,6 +44,7 @@
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
   "dependencies": {
+<<<<<<< before updating
     "@finos/perspective": "^3.8.0",
     "@finos/perspective-viewer": "^3.8.0",
     "@finos/perspective-viewer-d3fc": "^3.8.0",
@@ -54,15 +55,26 @@
     "@jupyterlab/services": "^7.5.0",
     "@lumino/disposable": "^2.1.5",
     "parquet-wasm": "0.3.1"
+=======
+    "@jupyterlab/application": "^4.5.1",
+    "@jupyterlab/apputils": "^4.6.1",
+    "@jupyterlab/notebook": "^4.5.1",
+    "@jupyterlab/services": "^7.5.1",
+    "@lumino/disposable": "^2.1.5"
+>>>>>>> after updating
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
     "@babel/eslint-parser": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
+<<<<<<< before updating
     "@finos/perspective-esbuild-plugin": "^3.2.1",
     "@jupyterlab/builder": "^4.4.10",
     "arraybuffer-loader": "^1.0.8",
+=======
+    "@jupyterlab/builder": "^4.5.1",
+>>>>>>> after updating
     "babel-jest": "^30.2.0",
     "babel-loader": "^10.0.0",
     "cpy-cli": "^6.0.0",
@@ -82,8 +94,13 @@
     "jest-junit": "^16.0.0",
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
+<<<<<<< before updating
     "prettier": "^3.6.2",
     "rimraf": "^6.1.2",
     "style-loader": "^4.0.0"
+=======
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.0"
+>>>>>>> after updating
   }
 }
