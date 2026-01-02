@@ -28,7 +28,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "perspective-python>=3,<4",
+    "perspective-python>=3,<5",
 ]
 
 [project.optional-dependencies]
