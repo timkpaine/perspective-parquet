@@ -49,7 +49,7 @@
     "@finos/perspective-viewer-d3fc": "^3.8.0",
     "@finos/perspective-viewer-datagrid": "^3.8.0",
     "@jupyterlab/application": "^4.5.1",
-    "@jupyterlab/apputils": "^4.6.1",
+    "@jupyterlab/apputils": "^4.6.3",
     "@jupyterlab/notebook": "^4.5.1",
     "@jupyterlab/services": "^7.5.1",
     "@lumino/disposable": "^2.1.5",
