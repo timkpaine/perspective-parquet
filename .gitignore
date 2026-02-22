@@ -141,14 +141,12 @@ js/node_modules
 js/test-results
 js/playwright-report
 js/*.tgz
-perspective_parquet/extension
 
 # Jupyter
 .ipynb_checkpoints
 .autoversion
 Untitled*.ipynb
-!perspective_parquet/extension/perspective_parquet.json
-!perspective_parquet/extension/install.json
+perspective_parquet/extension
 perspective_parquet/nbextension
 perspective_parquet/labextension
 
@@ -158,5 +156,11 @@ perspective_parquet/labextension
 # Rust
 target
 
+<<<<<<< before updating
 # Test
 *.parquet
+=======
+# Hydra
+outputs/
+multirun/
+>>>>>>> after updating
