@@ -84,29 +84,12 @@ filename = "js/package.json"
 search = '"version": "{current_version}"'
 replace = '"version": "{new_version}"'
 
-<<<<<<< before updating
-[tool.check-manifest]
-ignore = [
-    ".copier-answers.yaml",
-    "js/pnpm-lock.yaml",
-    "Makefile",
-    ".vscode/*",
-    "binder/**",
-    "perspective_parquet/extension/**",
-    "perspective_parquet/labextension/**",
-    "perspective_parquet/nbextension/**",
-    "docs/**/*",
-    "js/dist/**/*",
-    "js/lib/*",
-]
-
-=======
->>>>>>> after updating
 [tool.coverage.run]
 branch = true
 omit = [
     "perspective_parquet/tests/integration/",
 ]
+
 [tool.coverage.report]
 exclude_also = [
     "raise NotImplementedError",
