@@ -156,11 +156,9 @@ perspective_parquet/labextension
 # Rust
 target
 
-<<<<<<< before updating
-# Test
-*.parquet
-=======
 # Hydra
 outputs/
 multirun/
->>>>>>> after updating
+
+# Test
+*.parquet
