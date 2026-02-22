@@ -33,9 +33,10 @@
   },
   "scripts": {
     "build:babel": "babel src/ --source-maps --out-dir lib/",
+    "build:extension": "mkdirp ../perspective_parquet/extension/ && cpy --flat 'src/extension/*' '../perspective_parquet/extension/'",
     "build:nbextension": "mkdirp ../perspective_parquet/nbextension/static/ && cpy --flat 'src/notebook.js' '../perspective_parquet/nbextension/static/'",
     "build:labextension": "rimraf ../perspective_parquet/labextension && jupyter labextension build .",
-    "build": "pnpm clean && pnpm build:babel && pnpm build:labextension && pnpm build:nbextension",
+    "build": "pnpm clean && pnpm build:babel && pnpm build:extension && pnpm build:labextension && pnpm build:nbextension",
     "clean": "rimraf lib",
     "fix": "pnpm lint --fix",
     "lint": "eslint -c .eslintrc.cjs --ext .js src/ tests/",
