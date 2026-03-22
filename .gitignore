@@ -146,12 +146,10 @@ target
 outputs/
 multirun/
 
-<<<<<<< before updating
-# Test
-*.parquet
-=======
 # AI
 ROADMAP.md
 AGENTS.md
 .github/hooks/sdlc.json
->>>>>>> after updating
+
+# Test
+*.parquet
