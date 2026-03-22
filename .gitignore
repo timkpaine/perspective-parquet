@@ -146,5 +146,10 @@ target
 outputs/
 multirun/
 
+# AI
+ROADMAP.md
+AGENTS.md
+.github/hooks/sdlc.json
+
 # Test
 *.parquet
