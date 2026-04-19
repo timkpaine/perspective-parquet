@@ -151,6 +151,10 @@ multirun/
 ROADMAP.md
 AGENTS.md
 .github/hooks/sdlc.json
+<<<<<<< before updating
 
 # Test
 *.parquet
+=======
+.superpowers
+>>>>>>> after updating
