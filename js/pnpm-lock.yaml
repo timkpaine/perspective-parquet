@@ -33,8 +33,8 @@ importers:
         specifier: ^4.5.7
         version: 4.5.7
       '@jupyterlab/services':
-        specifier: ^7.5.7
-        version: 7.5.7(react@18.3.1)
+        specifier: ^7.6.0
+        version: 7.6.0(react@18.3.1)
       '@lumino/disposable':
         specifier: ^2.1.5
         version: 2.1.5
@@ -1192,6 +1192,12 @@ packages:
   '@jupyter/ydoc@3.4.1':
     resolution: {integrity: sha512-2LQN1suMChQRpU7cynksYdcyHuas1yqJmZ4LF5kBNv91Eoe6USPIWwk8Rju4ZmKmLXPIh4QwfU27JGTbBBeK3w==}
 
+  '@jupyter/ydoc@3.5.0':
+    resolution: {integrity: sha512-kY/p4vP4tB606AxoEUZDBDKjKLVTF2q6AJE0bMHA5l2lL0SxrjufjkXCK/EEI/vUCOpHRakysNS8644tVAvhDg==}
+
+  '@jupyter/ydoc@4.1.0':
+    resolution: {integrity: sha512-XOJbuSKCWpyd87ekpppGTm7iGiEZPONxLiiM6jOBZ2y8uvDhEdb6ltn0Rt8GR2ZEvcLC+MgSE+IGTnguKEhzNA==}
+
   '@jupyterlab/application@4.5.7':
     resolution: {integrity: sha512-n6NXkDaf7srHDCpvELxZeTf3N6DH11CS45u5KxFo54+ATq1iqFYFnp1pXknITMWp4ZynncrMrrEZVr5KVUptBA==}
 
@@ -1217,6 +1223,9 @@ packages:
   '@jupyterlab/coreutils@6.5.7':
     resolution: {integrity: sha512-ydc2gvzp1ZS1Q45RRu1gpFJi7j8GYFLo1s3Wz4kyvyxswZI7UVTuleHAW6mi2Xi/k5pbjeNn+JWNM+1VqRcmdw==}
 
+  '@jupyterlab/coreutils@6.6.1':
+    resolution: {integrity: sha512-1DjMEoiHi3CwycFVM0RWfn53+0zGhJ064SKqVeYKxxFFJdN3u7ezClduRiIGEQXAiums8w+9QLlljBx/M+kaUw==}
+
   '@jupyterlab/docmanager@4.5.7':
     resolution: {integrity: sha512-2GSM6UCgLNKEHP/9Xe64aQlwpeXp7Y7AHOMOfp5jVg4oKj5m3g+4UM3bGGOpeRYxtUQ/SzfiQIXUiwhnnS12Kw==}
 
@@ -1241,6 +1250,9 @@ packages:
   '@jupyterlab/nbformat@4.5.7':
     resolution: {integrity: sha512-5sFibmPFACnMVA0QwHOUGmTNq8oKBIh8DTDQ8ysTn1PYK4Zb8QYtNFYYBIh0sODy87e3H1b9DL8YVEQT91SAmQ==}
 
+  '@jupyterlab/nbformat@4.6.1':
+    resolution: {integrity: sha512-+dB/edJjn7JDFiyN4nGw+quxBwUFGktgbR8udQeJweDne5mPMArpwCez/HBFkIW/816UX6+gSji01wTP4y10Lw==}
+
   '@jupyterlab/notebook@4.5.7':
     resolution: {integrity: sha512-n1glifb1DmVwguiP/u/jNrtkoA64DOpbjV2wwWonaKNL2GNSI7cTc/YpeA0vqsJ52eFuI5V2veqlaEc2tT+wGQ==}
 
@@ -1256,16 +1268,24 @@ packages:
   '@jupyterlab/rendermime@4.5.7':
     resolution: {integrity: sha512-Ho3+I5ffyoxpz920b1rMdyBUOijF6mN9IOXSOSQ1QhxPoDp46Dh+tG4E4XGJK3pufVCnVpf9iVamQqihEZCSjQ==}
 
-  '@jupyterlab/services@7.5.7':
-    resolution: {integrity: sha512-5SfJ1s87IizxSBqtWQgFH3o57bKQrKooQlvyxfsEXl6+amfzRUqyf7JOQoBVQKPICHxxgGCLHOHxQ3gSNeq+Jw==}
+  '@jupyterlab/services@7.6.0':
+    resolution: {integrity: sha512-kO6RvYlSz+kr2VGr/4X3SoLn6WZmv+mUyQo3XFKi55h3Z34cIjQjUSOE2G7utlb59aSm1I7ip3AnU9/4mHfBLw==}
 
   '@jupyterlab/settingregistry@4.5.7':
     resolution: {integrity: sha512-/963vi9nZUHlBXyOFNff49iNTBdSN5z55RNWY96NwM6cjXSJ1XhKx4jgFbQBFLhQfyf/CyKUY+qIJkdVESdjxQ==}
     peerDependencies:
       react: '>=16'
 
+  '@jupyterlab/settingregistry@4.6.1':
+    resolution: {integrity: sha512-iQlzSchm7TsnXZUKSXJApGHO3KB1WQE3svenGkPBuqP+kO6DiXY7w5v4c+SCRmAXSrvSZ03QfGLWzCeAi8DsRQ==}
+    peerDependencies:
+      react: '>=16'
+
   '@jupyterlab/statedb@4.5.7':
     resolution: {integrity: sha512-ZTrvzC0Y8uTghzfZO1K3lvFGSvUw/evZeQqoR3qbJs/zSs6P+6PQNnrlDqnzFN9IoB85rq9L0fIS/oA7vsVDUw==}
+
+  '@jupyterlab/statedb@4.6.1':
+    resolution: {integrity: sha512-rF+3oTMCCyiw4OV0caIB0E/lUHncxR73S2uxFEzMxTnIPyA1usO3X5Ln92XqrLLj0acUqexZELCY2PYZSX0wZA==}
 
   '@jupyterlab/statusbar@4.5.7':
     resolution: {integrity: sha512-K7zTRi3o0fid/jE4QG9hwZwUz7oQpHmjrGlYIXx6OgkRV42cLbM3dZavsN4bYwFJEa1cDI7FVdx4YDTcDiCIzA==}
@@ -1729,61 +1749,51 @@ packages:
     resolution: {integrity: sha512-zJc0H99FEPoFfSrNpa91HYfxzfAJCr502oxNK1cfdC9hlaFI43RT+JFCann9JUgZmLzzntChHyn13Sgn9ljHNg==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-arm64-musl@1.12.2':
     resolution: {integrity: sha512-KQ3Lki6l+Pz1k/eBipN41ES+YUK30beLGb9YqcB1O542cyLCNE6GaxrfcY3T6EezmGGk84wb5XyO9loTM9tkcA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@unrs/resolver-binding-linux-loong64-gnu@1.12.2':
     resolution: {integrity: sha512-3SJGEh1DborhG6pyxvhPzCT4bbSIVihsvgJc13P1bHG7KLdNDaF9T3gsTwFc7Jw/5Y5/iWOjkEx7Zy0NvCGX3Q==}
     cpu: [loong64]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-loong64-musl@1.12.2':
     resolution: {integrity: sha512-jiuG/Obbel7uw1PwHNFfrkiKhLAF6mnyZ6aWlOAVN9WqKm8v0OFGnciJIHu8+CMvXLQ8AD51LPzAoUfT21D5Ew==}
     cpu: [loong64]
     os: [linux]
-    libc: [musl]
 
   '@unrs/resolver-binding-linux-ppc64-gnu@1.12.2':
     resolution: {integrity: sha512-q7xRvVpmcfeL+LlZg8Pbbo6QaTZwDU5BaGZbwfhkEsXJn3Was8xYfE0RBH266xZt0rM6B7i8xAYIvjthuUIWHg==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-riscv64-gnu@1.12.2':
     resolution: {integrity: sha512-0CVdx6lcnT3Q9inOH8tsMIOJ6ImndllMjqJHg8RLVdB7Vq4SfkEXl9mCSsVNuNA4MCYycRicCUxPCabVHJRr6A==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-riscv64-musl@1.12.2':
     resolution: {integrity: sha512-iOwlRo9vnp6R6ohHQS11n0NnfdXx/omhkocmIfaPRpQhKZ+3BDMkkdRVh53qjkFkpPddf+FETA28NwGN7l5l+w==}
     cpu: [riscv64]
     os: [linux]
-    libc: [musl]
 
   '@unrs/resolver-binding-linux-s390x-gnu@1.12.2':
     resolution: {integrity: sha512-HYJtLfXq94q8iZNFT1lknx258wlkkWhZeUXJRqzKBBUJ00CvZ+N33zgbCqimLjsyw5Va6uUxhVa12mI+kaveEw==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-x64-gnu@1.12.2':
     resolution: {integrity: sha512-mPsUhunKKDih5O96Y6enDQyHc1SqBPlY1E/SfMWDM3EdJ95Z9CArPeCVwCCqbP45ljvivdEk8Fxn+SIb1rDAJQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@unrs/resolver-binding-linux-x64-musl@1.12.2':
     resolution: {integrity: sha512-azrt6+5ydLd8Vt210AAFis/lZevSfPw93EJRIJG+xPu4WCJ8K0kppCTpMyLPcKT7H15M4Jnt2tMp5bOvCkRC6A==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@unrs/resolver-binding-openharmony-arm64@1.12.2':
     resolution: {integrity: sha512-YZ9hP4O0X9PQb8eO980qmLNGH4zT3I9+SZTdt0Pr0YyuGQhYKoOZkV02VzrzyOZJ5xIJ3UFIenKkUkGg8GjgWQ==}
@@ -5330,6 +5340,18 @@ packages:
       utf-8-validate:
         optional: true
 
+  ws@8.21.0:
+    resolution: {integrity: sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
   xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}
     engines: {node: '>=12'}
@@ -5375,6 +5397,10 @@ packages:
 
   yjs@13.6.30:
     resolution: {integrity: sha512-vv/9h42eCMC81ZHDFswuu/MKzkl/vyq1BhaNGfHyOonwlG4CJbQF4oiBBJPvfdeCt/PlVDWh7Nov9D34YY09uQ==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+
+  yjs@13.6.31:
+    resolution: {integrity: sha512-Eq+5BRfbeGyqGVrTJL3bEcr8gKkxPuyuoHmAwpk52fDb8kOVMrfVSTRPd6yiGgX5Fskb96qCRjzjbRjrL4YEnw==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
 
   yocto-queue@0.1.0:
@@ -6911,6 +6937,24 @@ snapshots:
       y-protocols: 1.0.7(yjs@13.6.30)
       yjs: 13.6.30
 
+  '@jupyter/ydoc@3.5.0':
+    dependencies:
+      '@jupyterlab/nbformat': 4.6.1
+      '@lumino/coreutils': 2.2.2
+      '@lumino/disposable': 2.1.5
+      '@lumino/signaling': 2.1.5
+      y-protocols: 1.0.7(yjs@13.6.31)
+      yjs: 13.6.31
+
+  '@jupyter/ydoc@4.1.0':
+    dependencies:
+      '@jupyterlab/nbformat': 4.6.1
+      '@lumino/coreutils': 2.2.2
+      '@lumino/disposable': 2.1.5
+      '@lumino/signaling': 2.1.5
+      y-protocols: 1.0.7(yjs@13.6.31)
+      yjs: 13.6.31
+
   '@jupyterlab/application@4.5.7(react@18.3.1)':
     dependencies:
       '@fortawesome/fontawesome-free': 5.15.4
@@ -6919,7 +6963,7 @@ snapshots:
       '@jupyterlab/docregistry': 4.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/statedb': 4.5.7
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@jupyterlab/ui-components': 4.5.7(react@18.3.1)
@@ -6943,7 +6987,7 @@ snapshots:
       '@jupyterlab/coreutils': 6.5.7
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/settingregistry': 4.5.7(react@18.3.1)
       '@jupyterlab/statedb': 4.5.7
       '@jupyterlab/statusbar': 4.5.7
@@ -6967,7 +7011,7 @@ snapshots:
 
   '@jupyterlab/attachments@4.5.7(react@18.3.1)':
     dependencies:
-      '@jupyterlab/nbformat': 4.5.7
+      '@jupyterlab/nbformat': 4.6.1
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
       '@jupyterlab/rendermime-interfaces': 3.13.7
@@ -7045,7 +7089,7 @@ snapshots:
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/outputarea': 4.5.7(react@18.3.1)
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/toc': 6.5.7
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@jupyterlab/ui-components': 4.5.7(react@18.3.1)
@@ -7137,14 +7181,23 @@ snapshots:
       path-browserify: 1.0.1
       url-parse: 1.5.10
 
+  '@jupyterlab/coreutils@6.6.1':
+    dependencies:
+      '@lumino/coreutils': 2.2.2
+      '@lumino/disposable': 2.1.5
+      '@lumino/signaling': 2.1.5
+      minimist: 1.2.8
+      path-browserify: 1.0.1
+      url-parse: 1.5.10
+
   '@jupyterlab/docmanager@4.5.7':
     dependencies:
       '@jupyterlab/apputils': 4.6.7
-      '@jupyterlab/coreutils': 6.5.7
+      '@jupyterlab/coreutils': 6.6.1
       '@jupyterlab/docregistry': 4.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
-      '@jupyterlab/statedb': 4.5.7
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
+      '@jupyterlab/statedb': 4.6.1
       '@jupyterlab/statusbar': 4.5.7
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@jupyterlab/ui-components': 4.5.7(react@18.3.1)
@@ -7163,14 +7216,14 @@ snapshots:
 
   '@jupyterlab/docregistry@4.5.7':
     dependencies:
-      '@jupyter/ydoc': 3.4.1
+      '@jupyter/ydoc': 3.5.0
       '@jupyterlab/apputils': 4.6.7
       '@jupyterlab/codeeditor': 4.5.7
       '@jupyterlab/coreutils': 6.5.7
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@jupyterlab/ui-components': 4.5.7(react@18.3.1)
       '@lumino/algorithm': 2.0.4
@@ -7205,11 +7258,11 @@ snapshots:
   '@jupyterlab/filebrowser@4.5.7':
     dependencies:
       '@jupyterlab/apputils': 4.6.7
-      '@jupyterlab/coreutils': 6.5.7
+      '@jupyterlab/coreutils': 6.6.1
       '@jupyterlab/docmanager': 4.5.7
       '@jupyterlab/docregistry': 4.5.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
-      '@jupyterlab/statedb': 4.5.7
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
+      '@jupyterlab/statedb': 4.6.1
       '@jupyterlab/statusbar': 4.5.7
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@jupyterlab/ui-components': 4.5.7(react@18.3.1)
@@ -7238,7 +7291,7 @@ snapshots:
       '@jupyterlab/codemirror': 4.5.7(react@18.3.1)
       '@jupyterlab/coreutils': 6.5.7
       '@jupyterlab/docregistry': 4.5.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@lumino/coreutils': 2.2.2
       '@lumino/disposable': 2.1.5
@@ -7272,7 +7325,7 @@ snapshots:
   '@jupyterlab/mermaid@4.5.7':
     dependencies:
       '@jupyterlab/apputils': 4.6.7
-      '@jupyterlab/coreutils': 6.5.7
+      '@jupyterlab/coreutils': 6.6.1
       '@jupyterlab/rendermime-interfaces': 3.13.7
       '@lumino/coreutils': 2.2.2
       '@lumino/widgets': 2.7.5
@@ -7283,6 +7336,10 @@ snapshots:
       - utf-8-validate
 
   '@jupyterlab/nbformat@4.5.7':
+    dependencies:
+      '@lumino/coreutils': 2.2.2
+
+  '@jupyterlab/nbformat@4.6.1':
     dependencies:
       '@lumino/coreutils': 2.2.2
 
@@ -7301,7 +7358,7 @@ snapshots:
       '@jupyterlab/nbformat': 4.5.7
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/settingregistry': 4.5.7(react@18.3.1)
       '@jupyterlab/statusbar': 4.5.7
       '@jupyterlab/toc': 6.5.7
@@ -7336,11 +7393,11 @@ snapshots:
   '@jupyterlab/outputarea@4.5.7(react@18.3.1)':
     dependencies:
       '@jupyterlab/apputils': 4.6.7
-      '@jupyterlab/nbformat': 4.5.7
+      '@jupyterlab/nbformat': 4.6.1
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime': 4.5.7(react@18.3.1)
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@lumino/algorithm': 2.0.4
       '@lumino/coreutils': 2.2.2
@@ -7363,10 +7420,10 @@ snapshots:
     dependencies:
       '@jupyterlab/apputils': 4.6.7
       '@jupyterlab/coreutils': 6.5.7
-      '@jupyterlab/nbformat': 4.5.7
+      '@jupyterlab/nbformat': 4.6.1
       '@jupyterlab/observables': 5.5.7
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/translation': 4.5.7(react@18.3.1)
       '@lumino/coreutils': 2.2.2
       '@lumino/messaging': 2.0.4
@@ -7378,19 +7435,19 @@ snapshots:
       - react
       - utf-8-validate
 
-  '@jupyterlab/services@7.5.7(react@18.3.1)':
+  '@jupyterlab/services@7.6.0(react@18.3.1)':
     dependencies:
-      '@jupyter/ydoc': 3.4.1
-      '@jupyterlab/coreutils': 6.5.7
-      '@jupyterlab/nbformat': 4.5.7
-      '@jupyterlab/settingregistry': 4.5.7(react@18.3.1)
-      '@jupyterlab/statedb': 4.5.7
+      '@jupyter/ydoc': 4.1.0
+      '@jupyterlab/coreutils': 6.6.1
+      '@jupyterlab/nbformat': 4.6.1
+      '@jupyterlab/settingregistry': 4.6.1(react@18.3.1)
+      '@jupyterlab/statedb': 4.6.1
       '@lumino/coreutils': 2.2.2
       '@lumino/disposable': 2.1.5
       '@lumino/polling': 2.1.5
       '@lumino/properties': 2.0.4
       '@lumino/signaling': 2.1.5
-      ws: 8.20.1
+      ws: 8.21.0
     transitivePeerDependencies:
       - bufferutil
       - react
@@ -7398,7 +7455,7 @@ snapshots:
 
   '@jupyterlab/settingregistry@4.5.7(react@18.3.1)':
     dependencies:
-      '@jupyterlab/nbformat': 4.5.7
+      '@jupyterlab/nbformat': 4.6.1
       '@jupyterlab/statedb': 4.5.7
       '@lumino/commands': 2.3.3
       '@lumino/coreutils': 2.2.2
@@ -7409,7 +7466,28 @@ snapshots:
       json5: 2.2.3
       react: 18.3.1
 
+  '@jupyterlab/settingregistry@4.6.1(react@18.3.1)':
+    dependencies:
+      '@jupyterlab/nbformat': 4.6.1
+      '@jupyterlab/statedb': 4.6.1
+      '@lumino/commands': 2.3.3
+      '@lumino/coreutils': 2.2.2
+      '@lumino/disposable': 2.1.5
+      '@lumino/signaling': 2.1.5
+      '@rjsf/utils': 5.24.13(react@18.3.1)
+      ajv: 8.20.0
+      json5: 2.2.3
+      react: 18.3.1
+
   '@jupyterlab/statedb@4.5.7':
+    dependencies:
+      '@lumino/commands': 2.3.3
+      '@lumino/coreutils': 2.2.2
+      '@lumino/disposable': 2.1.5
+      '@lumino/properties': 2.0.4
+      '@lumino/signaling': 2.1.5
+
+  '@jupyterlab/statedb@4.6.1':
     dependencies:
       '@lumino/commands': 2.3.3
       '@lumino/coreutils': 2.2.2
@@ -7456,7 +7534,7 @@ snapshots:
     dependencies:
       '@jupyterlab/coreutils': 6.5.7
       '@jupyterlab/rendermime-interfaces': 3.13.7
-      '@jupyterlab/services': 7.5.7(react@18.3.1)
+      '@jupyterlab/services': 7.6.0(react@18.3.1)
       '@jupyterlab/statedb': 4.5.7
       '@lumino/coreutils': 2.2.2
     transitivePeerDependencies:
@@ -10615,7 +10693,7 @@ snapshots:
       whatwg-encoding: 2.0.0
       whatwg-mimetype: 3.0.0
       whatwg-url: 11.0.0
-      ws: 8.20.1
+      ws: 8.21.0
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -10642,7 +10720,7 @@ snapshots:
       whatwg-encoding: 3.1.1
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.2.0
-      ws: 8.20.1
+      ws: 8.21.0
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - bufferutil
@@ -12208,6 +12286,8 @@ snapshots:
 
   ws@8.20.1: {}
 
+  ws@8.21.0: {}
+
   xml-name-validator@4.0.0: {}
 
   xml-name-validator@5.0.0: {}
@@ -12220,6 +12300,11 @@ snapshots:
     dependencies:
       lib0: 0.2.117
       yjs: 13.6.30
+
+  y-protocols@1.0.7(yjs@13.6.31):
+    dependencies:
+      lib0: 0.2.117
+      yjs: 13.6.31
 
   y18n@5.0.8: {}
 
@@ -12242,6 +12327,10 @@ snapshots:
       yargs-parser: 21.1.1
 
   yjs@13.6.30:
+    dependencies:
+      lib0: 0.2.117
+
+  yjs@13.6.31:
     dependencies:
       lib0: 0.2.117
 
