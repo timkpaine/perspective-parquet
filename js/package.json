@@ -62,7 +62,7 @@
     "@babel/eslint-parser": "^7.28.6",
     "@babel/preset-env": "^7.29.5",
     "@finos/perspective-esbuild-plugin": "^3.2.1",
-    "@jupyterlab/builder": "^4.5.7",
+    "@jupyterlab/builder": "^4.5.9",
     "arraybuffer-loader": "^1.0.8",
     "babel-jest": "^30.4.1",
     "babel-loader": "^10.1.1",
