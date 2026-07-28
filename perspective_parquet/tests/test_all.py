@@ -1,4 +1,4 @@
-from perspective_parquet import *  # noqa
+from perspective_parquet import *
 
 
 def test_all():
