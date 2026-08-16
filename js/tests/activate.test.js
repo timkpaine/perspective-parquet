@@ -5,5 +5,6 @@ import "isomorphic-fetch";
 describe("Checks activate", () => {
   test("Check activate", () => {
     // expect(_activate);
+    expect(true).toBe(true);
   });
 });

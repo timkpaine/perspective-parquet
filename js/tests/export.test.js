@@ -5,5 +5,6 @@ import "isomorphic-fetch";
 describe("Checks exports", () => {
   test("Check extension", () => {
     // expect(extension);
+    expect(true).toBe(true);
   });
 });

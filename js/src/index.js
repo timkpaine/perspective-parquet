@@ -7,7 +7,6 @@
  *
  */
 
-/* eslint-disable max-classes-per-file */
 import {ActivityMonitor} from "@jupyterlab/coreutils";
 import {ILayoutRestorer} from "@jupyterlab/application";
 import {IThemeManager, WidgetTracker, Dialog, showDialog} from "@jupyterlab/apputils";
@@ -18,7 +17,7 @@ import perspective_viewer from "@finos/perspective-viewer";
 
 import "@finos/perspective-viewer-datagrid";
 import "@finos/perspective-viewer-d3fc";
-import init, {Compression, WriterPropertiesBuilder, readParquet, writeParquet} from "parquet-wasm/esm2/arrow1";
+import init, {WriterPropertiesBuilder, readParquet, writeParquet} from "parquet-wasm/esm2/arrow1";
 import SERVER_WASM from "@finos/perspective/dist/wasm/perspective-server.wasm";
 import CLIENT_WASM from "@finos/perspective-viewer/dist/wasm/perspective-viewer.wasm";
 import wasm from "parquet-wasm/esm2/arrow1_bg.wasm";
@@ -88,7 +87,7 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
       try {
         const table = await this._psp.viewer.getTable();
         table.replace(data);
-      } catch (e) {
+      } catch {
         // construct new table
         const table_promise = worker.table(data);
 
@@ -103,7 +102,6 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
           if (this._type === "parquet") {
             const result = await view.to_arrow();
             const result_as_parquet = writeParquet(new Uint8Array(result), new WriterPropertiesBuilder().build());
-            /* eslint-disable-next-line no-return-assign,no-param-reassign */
             const resultAsB64 = btoa(result_as_parquet.reduce((acc, i) => (acc += String.fromCharCode.apply(null, [i])), ""));
             this.context.model.fromString(resultAsB64);
             this.context.save();
@@ -160,7 +158,7 @@ async function activate(app, restorer, themeManager) {
       contentType: "file",
       fileFormat: "base64",
     });
-  } catch (_a) {
+  } catch {
     // do nothing
   }
 
@@ -201,9 +199,7 @@ async function activate(app, restorer, themeManager) {
     });
 
     if (ftparquet) {
-      /* eslint-disable-next-line no-param-reassign */
       widget.title.iconClass = ftparquet.iconClass || "";
-      /* eslint-disable-next-line no-param-reassign */
       widget.title.iconLabel = ftparquet.iconLabel || "";
     }
   });
@@ -214,7 +210,6 @@ async function activate(app, restorer, themeManager) {
 
     const theme = isLight ? "Pro Light" : "Pro Dark";
     trackerparquet.forEach((pspDocWidget) => {
-      /* eslint-disable-next-line no-param-reassign */
       pspDocWidget.psp.theme = theme;
     });
   };
