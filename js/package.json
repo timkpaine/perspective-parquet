@@ -38,13 +38,8 @@
     "build:labextension": "rimraf ../perspective_parquet/labextension && jupyter labextension build .",
     "build": "pnpm clean && pnpm build:babel && pnpm build:extension && pnpm build:labextension && pnpm build:nbextension",
     "clean": "rimraf lib",
-<<<<<<< before updating
-    "fix": "pnpm lint --fix",
-    "lint": "eslint -c .eslintrc.cjs --ext .js src/ tests/",
-=======
     "fix": "oxlint --fix src/ tests/ && oxfmt --write \"src/**/*.js\" \"tests/**/*.js\"",
     "lint": "oxlint src/ tests/ && oxfmt --check \"src/**/*.js\" \"tests/**/*.js\"",
->>>>>>> after updating
     "preinstall": "npx only-allow pnpm",
     "prepublishOnly": "pnpm run build",
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
@@ -63,9 +58,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.28.6",
-<<<<<<< before updating
     "@babel/core": "^7.29.6",
-    "@babel/eslint-parser": "^7.28.6",
     "@babel/preset-env": "^7.29.5",
     "@finos/perspective-esbuild-plugin": "^3.2.1",
     "@jupyterlab/builder": "^4.5.7",
@@ -83,27 +76,15 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.5.5",
     "html-webpack-plugin": "^5.6.7",
-=======
-    "@babel/core": "^7.29.0",
-    "@babel/preset-env": "^7.29.3",
-    "@jupyterlab/builder": "^4.5.10",
-    "babel-jest": "^30.4.1",
-    "cpy-cli": "^6.0.0",
->>>>>>> after updating
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "jest-junit": "^17.0.0",
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
-<<<<<<< before updating
-    "prettier": "^3.8.3",
-    "rimraf": "^6.1.3",
-    "style-loader": "^4.0.0"
-=======
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
-    "rimraf": "^6.1.3"
->>>>>>> after updating
+    "rimraf": "^6.1.3",
+    "style-loader": "^4.0.0"
   }
 }
