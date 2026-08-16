@@ -4,6 +4,10 @@ import "isomorphic-fetch";
 
 describe("Checks exports", () => {
   test("Check extension", () => {
+<<<<<<< before updating
     // expect(extension);
+=======
+    expect(extension).toBeDefined();
+>>>>>>> after updating
   });
 });

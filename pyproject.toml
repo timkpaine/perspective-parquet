@@ -70,6 +70,10 @@ current_version = "0.1.2"
 commit = true
 tag = true
 commit_args = "-s"
+pre_commit_hooks = [
+    "pnpm --dir js install --lockfile-only --no-frozen-lockfile --ignore-scripts",
+    "git add js/pnpm-lock.yaml",
+]
 
 [[tool.bumpversion.files]]
 filename = "perspective_parquet/__init__.py"

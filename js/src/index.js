@@ -7,6 +7,7 @@
  *
  */
 
+<<<<<<< before updating
 /* eslint-disable max-classes-per-file */
 import {ActivityMonitor} from "@jupyterlab/coreutils";
 import {ILayoutRestorer} from "@jupyterlab/application";
@@ -222,6 +223,11 @@ async function activate(app, restorer, themeManager) {
   if (themeManager) {
     themeManager.themeChanged.connect(updateThemes);
   }
+=======
+async function activate(_app) {
+  // oxlint-disable-next-line no-console
+  console.log("JupyterLab extension perspective-parquet is activated!");
+>>>>>>> after updating
 }
 
 /**
