@@ -17,10 +17,10 @@ import perspective_viewer from "@finos/perspective-viewer";
 
 import "@finos/perspective-viewer-datagrid";
 import "@finos/perspective-viewer-d3fc";
-import init, {WriterPropertiesBuilder, readParquet, writeParquet} from "parquet-wasm/esm2/arrow1";
+import init, {Table, WriterPropertiesBuilder, readParquet, writeParquet} from "parquet-wasm";
 import SERVER_WASM from "@finos/perspective/dist/wasm/perspective-server.wasm";
 import CLIENT_WASM from "@finos/perspective-viewer/dist/wasm/perspective-viewer.wasm";
-import wasm from "parquet-wasm/esm2/arrow1_bg.wasm";
+import wasm from "parquet-wasm/esm/parquet_wasm_bg.wasm";
 
 import {PerspectiveWidget} from "./psp_widget";
 
@@ -78,8 +78,7 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
         console.log(wasm);
         await init(fetch(wasm));
 
-        // `readParquet` returns arrow ipc format uint8array
-        data = readParquet(Uint8Array.from(atob(this._context.model.toString()), (c) => c.charCodeAt(0))).buffer;
+        data = readParquet(Uint8Array.from(atob(this._context.model.toString()), (c) => c.charCodeAt(0))).intoIPCStream().buffer;
       } else {
         // don't handle other mimetypes for now
         throw new Error("Not handled");
@@ -101,7 +100,7 @@ export class PerspectiveDocumentWidget extends DocumentWidget {
           // TODO
           if (this._type === "parquet") {
             const result = await view.to_arrow();
-            const result_as_parquet = writeParquet(new Uint8Array(result), new WriterPropertiesBuilder().build());
+            const result_as_parquet = writeParquet(Table.fromIPCStream(new Uint8Array(result)), new WriterPropertiesBuilder().build());
             const resultAsB64 = btoa(result_as_parquet.reduce((acc, i) => (acc += String.fromCharCode.apply(null, [i])), ""));
             this.context.model.fromString(resultAsB64);
             this.context.save();
