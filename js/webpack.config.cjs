@@ -23,7 +23,7 @@ module.exports = {
                 use: [{ loader: "style-loader" }, { loader: "css-loader" }],
             },
             {
-                test: /(perspective\-server\.wasm|perspective\-viewer\.wasm|arrow1_bg\.wasm)$/,
+                test: /(perspective\-server\.wasm|perspective\-viewer\.wasm|parquet_wasm_bg\.wasm)$/,
                 type: "asset/resource",
             },
         ],
