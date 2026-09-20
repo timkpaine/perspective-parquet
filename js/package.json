@@ -60,31 +60,14 @@
     "@babel/cli": "^8.0.4",
     "@babel/core": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
-<<<<<<< before updating
-    "@finos/perspective-esbuild-plugin": "^3.2.1",
-    "@jupyterlab/builder": "^4.5.10",
-    "arraybuffer-loader": "^1.0.8",
-=======
     "@jupyter/builder": "^1.2.3",
     "@jupyterlab/core-meta": "^4.6.3",
->>>>>>> after updating
+    "arraybuffer-loader": "^1.0.8",
     "babel-jest": "^30.5.1",
     "babel-loader": "^10.1.1",
     "cpy-cli": "^7.0.0",
-<<<<<<< before updating
     "css-loader": "^7.1.5",
-    "eslint": "^10.10.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jest": "^29.16.6",
-    "eslint-plugin-json": "^5.0.0",
-    "eslint-plugin-prettier": "^5.5.6",
     "html-webpack-plugin": "^5.6.8",
-=======
-    "css-loader": "^7.1.4",
->>>>>>> after updating
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.5.1",
     "jest-environment-jsdom": "^30.5.1",
