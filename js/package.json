@@ -35,7 +35,7 @@
     "build:babel": "babel src/ --source-maps --out-dir lib/",
     "build:extension": "mkdirp ../perspective_parquet/extension/ && cpy --flat 'src/extension/*' '../perspective_parquet/extension/'",
     "build:nbextension": "mkdirp ../perspective_parquet/nbextension/static/ && cpy --flat 'src/notebook.js' '../perspective_parquet/nbextension/static/'",
-    "build:labextension": "rimraf ../perspective_parquet/labextension && jupyter labextension build .",
+    "build:labextension": "rimraf ../perspective_parquet/labextension && jupyter-builder build .",
     "build": "pnpm clean && pnpm build:babel && pnpm build:extension && pnpm build:labextension && pnpm build:nbextension",
     "clean": "rimraf lib",
     "fix": "oxlint --fix src/ tests/ && oxfmt --write \"src/**/*.js\" \"tests/**/*.js\"",
@@ -60,12 +60,18 @@
     "@babel/cli": "^8.0.4",
     "@babel/core": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
+<<<<<<< before updating
     "@finos/perspective-esbuild-plugin": "^3.2.1",
     "@jupyterlab/builder": "^4.5.10",
     "arraybuffer-loader": "^1.0.8",
+=======
+    "@jupyter/builder": "^1.2.3",
+    "@jupyterlab/core-meta": "^4.6.3",
+>>>>>>> after updating
     "babel-jest": "^30.5.1",
     "babel-loader": "^10.1.1",
     "cpy-cli": "^7.0.0",
+<<<<<<< before updating
     "css-loader": "^7.1.5",
     "eslint": "^10.10.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -76,6 +82,9 @@
     "eslint-plugin-json": "^5.0.0",
     "eslint-plugin-prettier": "^5.5.6",
     "html-webpack-plugin": "^5.6.8",
+=======
+    "css-loader": "^7.1.4",
+>>>>>>> after updating
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.5.1",
     "jest-environment-jsdom": "^30.5.1",
