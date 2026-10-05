@@ -45,23 +45,16 @@
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
   "dependencies": {
-<<<<<<< before updating
     "@finos/perspective": "^3.8.0",
     "@finos/perspective-viewer": "^3.8.0",
     "@finos/perspective-viewer-d3fc": "^3.8.0",
     "@finos/perspective-viewer-datagrid": "^3.8.0",
-=======
->>>>>>> after updating
     "@jupyterlab/application": "^4.6.4",
     "@jupyterlab/apputils": "^4.7.4",
     "@jupyterlab/notebook": "^4.6.4",
     "@jupyterlab/services": "^7.6.4",
-<<<<<<< before updating
     "@lumino/disposable": "^2.1.6",
     "parquet-wasm": "0.8.0"
-=======
-    "@lumino/disposable": "^2.1.6"
->>>>>>> after updating
   },
   "devDependencies": {
     "@babel/cli": "^8.0.6",
@@ -69,18 +62,12 @@
     "@babel/preset-env": "^8.0.6",
     "@jupyter/builder": "^1.2.3",
     "@jupyterlab/core-meta": "^4.6.4",
-<<<<<<< before updating
     "arraybuffer-loader": "^1.0.8",
     "babel-jest": "^30.5.2",
     "babel-loader": "^10.1.1",
     "cpy-cli": "^7.0.0",
     "css-loader": "^7.1.5",
     "html-webpack-plugin": "^5.6.8",
-=======
-    "babel-jest": "^30.5.2",
-    "cpy-cli": "^7.0.0",
-    "css-loader": "^7.1.5",
->>>>>>> after updating
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.5.2",
